@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bandung Pride</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <!-- header dapat menampung judul dan penulis -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Project">Project</a></li>
+          <li><a href="#Activity">Activity</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- article sebagai container independen (konten tidak berkaitan dengan konten lain) -->
+      <div id="content">
+        <article id="About" class="card">
+          <h2>About Me</h2>
+          <section id="Home" class="card">
+            <img class="utama" src="assets/image/formalpas.jpg" alt="Sulthan Asyegaf Baihaqi" />
+            <h2>Sulthan Asyegaf Baihaqi</h2>
+            <p>Informatics Engineering Student</p>
+            <p>
+              I am a student of the Faculty of Engineering and Science born in Jombang, East Java at a private university located in Purwokerto. My passion is to make things happen through my own hard
+              work. When I explore a passion, I begin to dig deeper into the lack of an inherent system of thought. So I use my experience and expertise to redevelop marginalized abilities. In the end
+              I understand how I develop myself, namely by completing tasks with co-workers which is called teamwork.
+            </p>
+          </section>
+        </article>
+
+        <article id="Project">
+          <h2>My Project</h2>
+          <div class="card">
+            <section class="featured-card">
+              <h3>Website Bandung Pride</h3>
+              <div>
+                <img src="assets/image/project1.png" alt="Project1" />
+                <p>
+                  Website Bandung Pride merupakan Project 1 yang telah saya dibuat pada learning path (Front End Web) Dicoding <q>Belajar Dasar Pemrograman Web</q> yang saat ini saya dapatkan dari
+                  Beasiswa ID Camp Indosat Ooredo. Pada project 1 ini saya belajar html semantic sekaligus sintaks css seperti bagaimana menerapkan flexbox, menerapkan font eksternal, belajar
+                  penggunaan elemen float sekaligus menerapkannya. Selain itu, saya juga belajar bagaimana menggunakan teknologi css yaitu CSS Media Query.
+                </p>
+              </div>
+            </section>
+            <section class="featured-card">
+              <h3>Kalkulator Berbasis Web</h3>
+              <div>
+                <img src="assets/image/project2.png" alt="Project2" />
+                <p>
+                  Kalkulator berbasis web merupakan project 2 yang telah saya buat pada learning path Dicoding <q>Belajar Dasar Pemrograman Web</q> yang saat ini saya dapatkan dari Beasiswa ID Camp
+                  Indosat Ooredo. Pada project 2 ini saya belajar tentang localStorage dan bagaimana menggunakan localStorage dengan menerapkan Javascript di dalam project yang saya buat. Sebelum itu,
+                  saya dibekali dasar-dasar Javascript sehingga memudahkan saya untuk mengimplementasikan pada project 2 yang telah saya buat.
+                </p>
+              </div>
+            </section>
+          </div>
+        </article>
+
+        <!-- fitur activity -->
+        <article id="Activity">
+          <h2>My Activity</h2>
+          <div class="card flex-column">
+            <section class="featured-card">
+              <header>
+                <img src="assets/image/HMTI.jpg" alt="Activity1" />
+                <h5>HMTI PERIODE 2021/2022</h5>
+              </header>
+              <div class="content">
+                <p>
+                  HMTI atau Himpunan Mahasiswa teknik informatika merupakan sebuah organisasi internal kampus yang berjalan di Program Studi Teknik informatika. Saat ini, saya menjadi staf salah satu
+                  Departemen HMTI Periode 2021/2022 yaitu Departemen Keilmuan dan pengembangan.
+                </p>
+              </div>
+            </section>
+
+            <section class="featured-card">
+              <header>
+                <img src="assets/image/KPU.jpg" alt="Activity2" />
+                <h5>KOMISI PEMILIHAN UMUM 2021</h5>
+              </header>
+              <div class="content">
+                <p>
+                  KPU atau Komisi Pemilihan Umum merupakan sebuah kepanitiaan yang dibentuk untuk mensukseskan pemilihan Presiden dan Wakil Presiden Badan Eksekutif Mahasiswa tingkat fakultas (Teknik
+                  dan Sainsi) atau disebut dengan istilah Pres BEM dan Wapres BEM. Saat itu, saya menjadi salah satu anggota dari Divisi IT.
+                </p>
+              </div>
+            </section>
+
+            <section class="featured-card">
+              <header>
+                <img src="assets/image/StudyClub.jpg" alt="Activity3" />
+                <h5>STUDY CLUB 2021</h5>
+              </header>
+              <div class="content">
+                <p>
+                  Study Club yaitu wadah belajar bagi Mahasiswa TI yang merupakan program kerja Departmen Keilmuan dan Pengembangan, HMTI 2021/2022. Study Club terbagi menjadi beberapa bidang, yaitu
+                  Software Engineering, Artificial Intelligence (AI) dan Network dan Forensic Digital.
+                </p>
+              </div>
+            </section>
+          </div>
+        </article>
+        <!-- akhir fitur activity -->
+
+        <article id="Contact" class="card featured-card">
+          <section class="formContact">
+            <h2>Contact Me</h2>
+            <form name="sulthan-contact-form">
+              <p>
+                <label for="name">Nama</label>
+                <input type="text" class="nama" name="nama" id="nama" />
+              </p>
+              <p>
+                <label for="email">Email</label>
+                <input type="email" name="email" class="email" required id="email" />
+              </p>
+              <p>
+                <label for="pesan">Pesan</label>
+                <textarea name="pesan" id="pesan"></textarea>
+              </p>
+              <button type="submit" name="submit" class="kirim d-none">Kirim</button>
+              <button type="submit" name="submit" class="loading">Loading...</button>
+            </form>
+          </section>
+        </article>
+      </div>
+
+      <aside>
+        <article class="card">
+          <header class="profile">
+            <h2>Place</h2>
+            <p>Tempatku melakukan kolaborasi</p>
+          </header>
+          <section class="informasi">
+            <p class="github">
+              <a href="https://github.com/SulthanAsyegafBaihaqi"><img src="assets/image/github.png" alt="github" height="45px" /></a>
+            </p>
+
+            <p class="linkedin">
+              <a href="https://www.linkedin.com/in/sulthanasyegafb/"><img src="assets/image/linkedin.png" alt="linkedin" height="35px" /></a>
+            </p>
+            <p class="instagram">
+              <a href="https://www.instagram.com/sulthan_otan/"><img src="assets/image/Instagram-Logo.wine.png" alt="instagram" height="50px" /></a>
+            </p>
+          </section>
+        </article>
+      </aside>
+    </main>
+
+    <!-- footer digunakan untuk catatan kaki dan menampung link artikel -->
+    <footer>
+      <p>Belajar Dasar Pemrograman Web &#169; 2022, Dicoding Academy</p>
+    </footer>
+
+    <script src="assets/form.js"></script>
+  </body>
+</html>

@@ -1,0 +1,191 @@
+/* Import font Quicksand */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#About img {
+  width: 200px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card .utama {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+
+.featured-card {
+  width: 100%;
+}
+
+.featured-card img {
+  width: 100%;
+}
+
+h1,
+h2,
+h5,
+p {
+  text-align: center;
+}
+
+/* navbar */
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+nav {
+  background-color: #00a2c6;
+  padding: 5px;
+  position: fixed;
+  width: 100%;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+/* navbar akhir */
+
+main {
+  padding: 20px;
+  overflow: auto;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* card effect */
+.card,
+.featured-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#Activity .card.flex-column {
+  display: flex;
+}
+
+#Activity .featured-card {
+  margin-right: 10px;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+h2,
+h3 {
+  color: #00a2c6;
+}
+
+aside {
+  float: right;
+  width: 25%;
+  padding-left: 20px;
+}
+
+#content {
+  float: left;
+  width: 75%;
+}
+
+.card.featured-card form {
+  text-align: center;
+}
+
+.nama,
+.email {
+  width: 70%;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 10px;
+}
+textarea {
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 70%;
+  height: 100px;
+}
+
+button {
+  color: rgb(218, 209, 209);
+  background-color: #00a2c6;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+button:hover {
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 2px 4px #0a7086;
+}
+
+.loading {
+  display: none;
+}
+
+.card .formContact {
+  padding: 30px;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #00a2c6;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* breakpoint responsive*/
+/* tablet */
+@media screen and (max-width: 960px) {
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+
+  aside .profile .lambang {
+    width: 35%;
+  }
+
+  #content {
+    width: 100%;
+  }
+  .informasi {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 645px) {
+  #Activity .card.flex-column {
+    flex-wrap: wrap;
+  }
+}
